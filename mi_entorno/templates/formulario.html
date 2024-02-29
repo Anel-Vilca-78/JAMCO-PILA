@@ -11,14 +11,15 @@
         <input type="submit" value="Enviar">
     </form>
     {% if bandera != '' %}
+      <h1>{{ mensajeERROR }}</h1>
         <div class="div-bandera">
-            {% if bandera %}
+            {% if bandera2 %}
                 <p>El codigo si funciona</p>
             {% else %}
                 <p>El codigo no funciona</p>
             {% endif %}
         </div>
-        {% if bandera %}
+        {% if bandera2 %}
     <div class="txtarea-pila">
         {% for elemento in pila %}
             <li>{{ elemento }}</li>
